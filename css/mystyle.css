@@ -2,13 +2,7 @@ html, body{
 	margin: 0;
 	padding: 0;
 }
-/*.menu{
-	height: 100px;
-}*/
 
-.container-fluid{
-/*	padding-top: 20px;*/
-}
 .navbar-right{
 	margin-right: 100px;
 }
@@ -16,9 +10,10 @@ html, body{
 .slider{
 	height: 570px;
 	margin-top: -20px;
-	background: url('../img/Layer 1.png') no-repeat;
-	-webkit-background-size: 100% 100%;
-	background-size: 100% 100%;
+	background: url('../img/Layer 11.png') no-repeat;
+	-webkit-background-size: 100% 570px;
+	background-size: 100% 570px;
+	overflow: hidden;
 	border-bottom: 4px solid #f34949;
 }
 
@@ -27,9 +22,15 @@ html, body{
 	margin-left: 18%;
     margin-top: 18%;
 }
+/*.slider>span{
+	height: 400px;
+	margin-top: -20px;
+	background-color: black;
+	opacity: 0.7;
+}*/
 /*Под слайдером*/
 .ander_slider{
-	height: 600px;
+/*	height: 600px;*/
 }
 .ander_slider>div:nth-of-type(1){
 	height: 70px;
@@ -40,7 +41,8 @@ html, body{
   display: block;
   float: none;
   vertical-align: middle;
-   margin-left: 40%;
+/*   margin-left: 40%;*/
+margin: 0px auto;
 }
 .recept{
 	float: left;
@@ -62,4 +64,124 @@ html, body{
 }
 .price{
 	margin-top: 10px;
+}
+/*Выпадающая кнопка*/
+.drop{
+	margin-top: 470px;
+}
+/*кнопки слайдера*/
+.carousel{
+    margin-top: 20px;
+}
+.carousel-indicators li{
+  background-color: #999 !important;
+  background-color: rgba(70,70,70,.25) !important;
+}
+/*картинки нижнего слайдера*/
+.dishis{
+    margin-top: 50px;
+}
+.dishid>h4{
+	margin-top: 50px;
+	margin-left: 40px;
+}
+#myCarousel{
+	margin-top: 90px;
+}
+.dishis>div>div:nth-of-type(1){ 
+		height: 215px;
+}
+.dishis>div:nth-of-type(1)>div:nth-of-type(1){ 
+	background: url('../img/Layer 4.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+/*	background-color: red;*/
+}
+.dishis>div:nth-of-type(2)>div:nth-of-type(1){ 
+	background: url('../img/Layer 5.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+/*		background-color: green;*/
+}
+.dishis>div:nth-of-type(3)>div:nth-of-type(1){ 
+	background: url('../img/Layer 2.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+/*			background-color: black;*/
+}
+.dishis>div:nth-of-type(4)>div:nth-of-type(1){ 
+	background: url('../img/Layer 3.png') no-repeat;
+	-webkit-background-size: contain;
+	background-size: contain;
+/*	background-color: blue;*/
+}
+/*звезды*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+/*The gallery*/
+.gallery{
+	margin-top: 5%;
+}
+.gallery>h4{
+	margin-left: 60px;
+	padding-bottom: 60px;
+}
+
+.gallery>div:nth-of-type(1)>div:nth-of-type(1){
+	height: 400px;
+	background: url('../img/Layer 7 copy.png') no-repeat;
+	-webkit-background-size: cover;
+}
+.gallery>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(1){
+	height: 200px;
+	background: url('../img/Layer 13 copy.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.gallery>div:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(2){
+	height: 200px;
+	background: url('../img/Layer 17.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.gallery>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(1){
+	height: 200px;
+	background: url('../img/Layer 17 copy.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.gallery>div:nth-of-type(1)>div:nth-of-type(3)>div:nth-of-type(2){
+	height: 200px;
+	background: url('../img/Layer 15 copy.png') no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+/*Подвал сайта*/
+.footer{
+	background-color: #3b3b3b;
+}
+.footer>div>div{
+	height: 160px;
+	margin-top: 40px;
+}
+
+.footer>div>div>p{
+	color: #ececec;
+}
+
+.footer>div>div>a>img{
+	padding-bottom: 20px;
 }
